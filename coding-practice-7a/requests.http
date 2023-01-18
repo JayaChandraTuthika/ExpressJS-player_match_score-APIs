@@ -1,0 +1,30 @@
+
+// GET ALL PLAYERS
+GET http://localhost:3005/players/
+###
+
+//GET PLAYER DETAILS BY ID
+GET http://localhost:3005/players/5
+###
+
+//UPDATE PLAYER DETAILS
+PUT http://localhost:3005/players/5
+Content-Type: application/json
+
+{
+    "playerName":"Raju"
+}
+###
+//MATCH DETAILS BY MATCH ID
+GET http://localhost:3005/matches/10
+###
+
+//MATCHES BY PLAYER ID
+GET http://localhost:3005/players/1/matches/
+###
+
+//PLAYER BY MATCH ID
+GET http://localhost:3005/matches/1/players
+###
+
+GET http://localhost:3005/players/1/playerScores
